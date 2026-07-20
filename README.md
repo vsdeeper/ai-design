@@ -1,25 +1,39 @@
-### 使用说明
+# ai-recognition-virtual-fitting-bench
 
-AI 设计出图工作区：基于 taste-skill 生成品牌规范板、网站 section 参考图与移动端 App 概念图。当前无可运行的前端应用。
+AI 识别虚拟试衣台前端骨架：基于 Next.js App Router，当前仅含官方模板与工程化配置，尚未实现业务功能。
 
-```
-查看已安装技能
-cat skills-lock.json
+## Getting Started
 
-安装技能示例
-npx skills add https://github.com/Leonxlnx/taste-skill --skill brandkit
-npx skills add https://github.com/Leonxlnx/taste-skill --skill imagegen-frontend-web
-npx skills add https://github.com/Leonxlnx/taste-skill --skill imagegen-frontend-mobile
+```bash
+pnpm install
+pnpm dev
 ```
 
-### 已安装 Skill
+打开 [http://localhost:3000](http://localhost:3000) 查看页面。编辑 `src/app/page.tsx` 即可热更新。
 
-| Skill | 说明 |
-| ----- | ---- |
-| `brandkit` | 高端品牌规范板、Logo 体系、身份应用展示图；适合品牌提案与视觉系统一览 |
-| `imagegen-frontend-web` | 网站/落地页设计参考图；**每个 section 单独出一张横图**，禁止整页压成一张长图 |
-| `imagegen-frontend-mobile` | 移动端 App 屏幕与流程概念图（默认手机框）；**只出图，不写代码** |
+## 常用命令
 
-技能正文在 `.agents/skills/`（`.claude/skills/` 为符号链接）。出图前请先阅读对应 `SKILL.md`。
+```bash
+pnpm dev           # 开发服务器
+pnpm build         # 生产构建
+pnpm start         # 启动生产服务
+pnpm lint          # ESLint
+pnpm format        # Prettier 格式化
+pnpm format:check  # Prettier 检查
+```
 
-更多约定见 [AGENTS.md](./AGENTS.md)。
+## 工程化
+
+- **Prettier** + **ESLint**（`eslint-config-next` + `eslint-config-prettier`）
+- **husky** + **lint-staged**：`pre-commit` 对暂存文件 lint/format
+- **commitlint**：Conventional Commits（`commit-msg`）
+
+## 技术栈
+
+Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · pnpm
+
+## 文档
+
+- Agent Skills 使用说明：[SKILLS.md](./SKILLS.md)
+- Web 出图提示词模板：[PROMPTS.md](./PROMPTS.md)
+- AI / 工程约定：[AGENTS.md](./AGENTS.md)

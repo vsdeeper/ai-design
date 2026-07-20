@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.agents
+skills-lock.json
+PROMPTS.md
