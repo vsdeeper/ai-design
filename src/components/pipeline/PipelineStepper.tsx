@@ -20,9 +20,9 @@ export function PipelineStepper() {
           const clickable = canNavigateTo(item.step);
 
           return (
-            <li key={item.step} className="flex items-center gap-1 sm:gap-2">
+            <li key={item.step} className="flex items-start gap-1 sm:gap-2">
               {index > 0 ? (
-                <span className="px-1 text-ink-muted" aria-hidden>
+                <span className="px-1 mt-0.5 text-ink-muted" aria-hidden>
                   ›
                 </span>
               ) : null}

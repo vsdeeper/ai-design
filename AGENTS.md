@@ -74,12 +74,14 @@ pnpm prettier --write "src/**/*.{js,jsx,ts,tsx,css,json,md}"
 
 常用 type：`feat`、`fix`、`chore`、`docs`、`refactor`、`test`、`style`、`ci`、`build`、`perf`。
 
+`description` 使用**简体中文**。
+
 示例：
 
 ```text
-feat: init next.js scaffold
-chore: add prettier and husky
-fix: resolve port conflict on windows
+feat: 还原 FitBench 六步流水线 UI
+chore: 补充 Prettier 与 husky 工程化配置
+fix: 修复 Windows 下端口冲突
 ```
 
 `pre-commit` 会对暂存文件执行 `eslint --fix` 与 `prettier --write`。
