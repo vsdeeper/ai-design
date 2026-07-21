@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AI Recognition Virtual Fitting Bench',
-  description: 'AI recognition virtual fitting bench scaffold',
+  title: 'FitBench — AI 识别虚拟试衣评测台',
+  description:
+    'FitBench 评测台：上传图片 → 识别衣物单品 → 选择模特 → 虚拟试穿，对比模型效果辅助选型。',
 };
 
 export default function RootLayout({
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col font-sans">{children}</body>
     </html>
   );
 }

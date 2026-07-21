@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#F7F5F2"/>
+  <ellipse cx="360" cy="180" rx="90" ry="100" fill="#E8D5C4"/>
+  <rect x="230" y="280" width="260" height="420" rx="50" fill="#A8C5E2"/>
+  <rect x="250" y="300" width="220" height="80" rx="8" fill="#FFFFFF" opacity="0.35"/>
+  <text x="360" y="900" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#1A2332">FitBench Try-on Result</text>
+</svg>
